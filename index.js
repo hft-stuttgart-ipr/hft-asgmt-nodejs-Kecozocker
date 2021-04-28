@@ -6,6 +6,7 @@ const db = new sqlite3.Database("./db/shoutbox.db");
 const port = process.env.PORT || 3000;
 const app = express();
 
+
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
